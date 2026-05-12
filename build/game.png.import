@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Forgotten_20251109_155111_0000.png-f5f7e786dde24a541a2f7bb40f5af738.stex"
+path="res://.import/game.png-a797a6f61c9dc03312e4d6eb974eea61.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assests/Forgotten_20251109_155111_0000.png"
-dest_files=[ "res://.import/Forgotten_20251109_155111_0000.png-f5f7e786dde24a541a2f7bb40f5af738.stex" ]
+source_file="res://build/game.png"
+dest_files=[ "res://.import/game.png-a797a6f61c9dc03312e4d6eb974eea61.stex" ]
 
 [params]
 
@@ -28,6 +28,7 @@ process/fix_alpha_border=true
 process/premult_alpha=false
 process/HDR_as_SRGB=false
 process/invert_color=false
+process/normal_map_invert_y=false
 stream=false
 size_limit=0
 detect_3d=true

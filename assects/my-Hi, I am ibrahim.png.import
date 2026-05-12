@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Forgotten.png-b6cd2da8ed794a063b924b39a524f7aa.stex"
+path="res://.import/my-Hi, I am ibrahim.png-6d0e9f333fbbe4ae92b7d3ca273eed4a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://build/Forgotten.png"
-dest_files=[ "res://.import/Forgotten.png-b6cd2da8ed794a063b924b39a524f7aa.stex" ]
+source_file="res://assects/my-Hi, I am ibrahim.png"
+dest_files=[ "res://.import/my-Hi, I am ibrahim.png-6d0e9f333fbbe4ae92b7d3ca273eed4a.stex" ]
 
 [params]
 
@@ -28,6 +28,7 @@ process/fix_alpha_border=true
 process/premult_alpha=false
 process/HDR_as_SRGB=false
 process/invert_color=false
+process/normal_map_invert_y=false
 stream=false
 size_limit=0
 detect_3d=true
