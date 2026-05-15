@@ -23,6 +23,7 @@ window/stretch/aspect="keep"
 [global]
 
 color=false
+ssl=false
 
 [gui]
 
