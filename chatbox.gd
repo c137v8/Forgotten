@@ -6,12 +6,14 @@ var messages = []
 var current_index = 0
 
 onready var text_label = $Panel/RichTextLabel
-onready var next_button = $Panel/Button
+onready var close_button = $Panel/CloseChat
 
 func _ready():
-	hide()  # Hide by default
+	hide()
 
-# Call this to start a conversation
+	close_button.connect("pressed", self, "end_chat")
+#	next_button.connect("pressed", self, "show_next_message")
+
 func start_chat(message_list):
 	messages = message_list
 	current_index = 0
@@ -22,13 +24,10 @@ func show_next_message():
 	if current_index >= messages.size():
 		end_chat()
 		return
-	
+
 	text_label.bbcode_text = messages[current_index]
 	current_index += 1
 
 func end_chat():
 	hide()
 	emit_signal("chat_finished")
-
-func _on_Button_pressed():
-	show_next_message()

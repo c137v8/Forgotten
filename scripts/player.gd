@@ -40,7 +40,7 @@ func _physics_process(delta):
 
 	# Interact input
 	if Input.is_action_just_pressed("interact"):
-		var chat_ui = get_tree().get_root().get_node_or_null("ChatUI")
+		var chat_ui = get_tree().current_scene.get_node("ChatUI")
 		if chat_ui:
 			chat_ui.start_chat([
 				"Hello traveler...",

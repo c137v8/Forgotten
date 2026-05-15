@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://scripts/player.gd" type="Script" id=1]
 [ext_resource path="res://assects/Character_spriteSheet.png" type="Texture" id=2]
@@ -53,6 +53,9 @@ extents = Vector2( 25, 45 )
 
 [sub_resource type="RectangleShape2D" id=14]
 extents = Vector2( 317.5, 8.25 )
+
+[sub_resource type="CanvasItemMaterial" id=16]
+blend_mode = 1
 
 [node name="Node2D" type="Node2D"]
 
@@ -128,8 +131,23 @@ margin_top = 192.0
 margin_right = 464.0
 margin_bottom = 248.0
 
-[node name="Button" type="Button" parent="ChatUI/Panel"]
-margin_left = 376.0
-margin_top = 376.0
-margin_right = 456.0
-margin_bottom = 400.0
+[node name="CloseChat" type="Button" parent="ChatUI/Panel"]
+margin_left = 120.0
+margin_top = 400.0
+margin_right = 200.0
+margin_bottom = 424.0
+text = "End Chat"
+
+[node name="SendChat" type="Button" parent="ChatUI/Panel"]
+margin_left = 312.0
+margin_top = 400.0
+margin_right = 376.0
+margin_bottom = 420.0
+text = "->"
+
+[node name="UserInput" type="TextEdit" parent="ChatUI/Panel"]
+material = SubResource( 16 )
+margin_left = 120.0
+margin_top = 352.0
+margin_right = 379.0
+margin_bottom = 376.0
