@@ -2,7 +2,7 @@ extends CanvasLayer
 
 signal chat_finished
 
-var api_key = "YOUR_OPENROUTER_KEY"   # ← Put your real key here
+var api_key =  Autoload.get_key()
 
 onready var close_button = $Panel/CloseChat
 onready var send_message = $Panel/SendChat
@@ -43,7 +43,7 @@ func _on_send_pressed():
 # Send to OpenRouter (simple - no history)
 # ─────────────────────────────────────────────
 func send_to_ai(user_message: String):
-	var url = "http://neverssl.com/"
+	var url = "https://openrouter.ai/api/v1/chat/completions"
 	
 	var headers = [
 		"Content-Type: application/json",
@@ -53,7 +53,7 @@ func send_to_ai(user_message: String):
 	]
 	
 	var body = {
-		"model": "deepseek/deepseek-chat-v3-0324:free",
+		"model": "baidu/cobuddy:free",
 		"messages": [
 			{
 				"role": "user",
