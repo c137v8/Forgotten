@@ -8,6 +8,12 @@ var velocity = Vector2.ZERO
 
 onready var animated_sprite = $AnimatedSprite
 
+# --- ADD THIS NEW FUNCTION HERE ---
+func _ready():
+	# This ensures the Room Detection script can always identify Zozo
+	add_to_group("player")
+# ----------------------------------
+
 func _physics_process(delta):
 	# Apply gravity
 	velocity.y += gravity * delta
@@ -40,7 +46,7 @@ func _physics_process(delta):
 
 	# Interact input
 	if Input.is_action_just_pressed("interact"):
-		var chat_ui = get_tree().current_scene.get_node("ChatUI")
+		var chat_ui = get_tree().current_scene.get_node_or_null("ChatUI")
 		if chat_ui:
 			chat_ui.start_chat([
 				"Hello traveler...",
