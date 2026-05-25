@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/dia.png-e88e34601081fe53886b29da3c6fb685.stex"
+path="res://.import/Gemini_Generated_Image_t8qcaqt8qcaqt8qc.png-42fb9eb15355aa3e52fd207fddfe84b1.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Presentation/dia.png"
-dest_files=[ "res://.import/dia.png-e88e34601081fe53886b29da3c6fb685.stex" ]
+source_file="res://assects/Gemini_Generated_Image_t8qcaqt8qcaqt8qc.png"
+dest_files=[ "res://.import/Gemini_Generated_Image_t8qcaqt8qcaqt8qc.png-42fb9eb15355aa3e52fd207fddfe84b1.stex" ]
 
 [params]
 
